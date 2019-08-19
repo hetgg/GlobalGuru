@@ -1,8 +1,24 @@
 <?php 
 include_once("header.php");
 ?>
+
+<?php 
+	
+	if(isset($_POST['submit'])){
+		$subcatid=$_POST['subcatid'];
+		$subcatname=$_POST['sname'];
+		$catid=$_POST['catid'];
+		$subcatimg=$_POST['simg'];
+
+		$cnn=mysqli_connect("localhost","root","","dbglobalguru");
+		$qry="UPDATE subcategory SET subcatname= '$subcatname',catid= '$catid',subcateimg= '$subcatimg' WHERE subcatid= '$subcatid'";
+		echo $qry;
+		$result=$cnn->query($qry);
+	}
+?>						
+
 <h3 class="header smaller lighter blue">Update details</h3>
-								<form class="form-horizontal" role="form" action="post">
+								<form class="form-horizontal" role="form" method="post">
 									
 									<div class="form-group">
 
@@ -26,37 +42,18 @@ include_once("header.php");
 										</div>
 									</div>
 					
-
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
-											<button class="btn btn-info" type="button">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Submit
-											</button>
-
+											<input type="submit" class="btn btn-info" name="submit" value="Submit">
+												
 											&nbsp; &nbsp; &nbsp;
-											<button class="btn" type="reset">
-												<i class="ace-icon fa fa-undo bigger-110"></i>
-												Reset
-											</button>
+											<input type="reset" class="btn" type="reset" name="Reset">
+												
+
 										</div>
 									</div>
 								</form>
 
-<?php 
-	
-	if(isset($_POST['Submit'])){
-		$subcatname=$_POST['sname'];
-		$catid=$_POST['catid'];
-		$subcatimg=$_POST['subcatimage'];
-
-		$cnn=mysqli_connect("localhost","root","","dbglobalguru");
-		$qry="UPDATE subcateory SET `subcatid`= '$subcatid',`subcatname`= '$subcatname',`catid`= '$catid',`subcatimg`= '$subcatimg',";
-		echo $qry;
-		$resul=$cnn->query($qry);
-	}
-
-?>								
 
 <?php 
 include_once("footer.php");
