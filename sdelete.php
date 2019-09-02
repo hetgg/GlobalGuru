@@ -5,14 +5,20 @@ include_once("header.php");
 <?php 
 	$cnn=mysqli_connect("localhost","root","","dbglobalguru");
 	$subcatid=$_GET['id'];
+    $qry1="Select * from subcategory where subcatid=$subcatid";
+	$result=$cnn->query($qry1);
+	$row=$result->fetch_assoc();
+	$subcatname=$row['subcatname'];
+	$catid=$row['catid'];
+	$subcateimg=$row['subcateimg'];
+
 
 
 	if(isset($_POST['submit'])){
 		
-		$subcatid=$_POST['subcatid'];
-		$cnn=mysqli_connect("localhost","root","","dbglobalguru");
 		$qry="DELETE FROM  subcategory WHERE subcatid ='$subcatid'";
-		$resul=$cnn->query($qry);
+		$result=$cnn->query($qry);
+        echo $qry;
 	}
 
 ?>								
@@ -20,12 +26,31 @@ include_once("header.php");
 <h3 class="header smaller lighter blue">delete details</h3>
 								<form class="form-horizontal" role="form" method="post">
 									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Subcategory id: </label>
+                                        
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Subcategory name: </label>
 
 										<div class="col-sm-9">
-											<input type="text" id="form-field-1" placeholder="subcatid" name="subcatid" value="<?php echo $subcatid;?>" class="col-xs-10 col-sm-5" />
+											<input type="text" id="form-field-1" placeholder="subcatname" name="sname" value="<?php echo $subcatname;?>" class="col-xs-10 col-sm-5" />
 										</div>
-										<br>
+                                        <br>
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> category id: </label>	
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="catid" name="catid" value="<?php echo $catid;?>" class="col-xs-10 col-sm-5" />
+										</div>
+                                        <br>
+                                        
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> subcateory image: </label>
+										<div class="col-sm-9">
+											<input type="text" id="form-field-1" placeholder="subcatimage" name="simg" value="<?php echo $subcateimg;?>" class="col-xs-10 col-sm-5" />
+										</div>
+                                        <img src="img//<?php echo $subcateimg;?>"  height="100px" width="100px" style="float:right;margin-top:-100px;margin-right:300px;"/> 
+								        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                           
+    
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
 											<input type="submit" class="btn btn-info" name="submit" value="Submit">
@@ -36,6 +61,7 @@ include_once("header.php");
 
 										</div>
 								</div>
+                                </div>        
 								</form>
 
 
