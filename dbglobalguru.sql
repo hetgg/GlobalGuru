@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2019 at 12:26 PM
+-- Generation Time: Sep 09, 2019 at 07:46 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -21,6 +21,35 @@ SET time_zone = "+00:00";
 --
 -- Database: `dbglobalguru`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `aid` int(10) NOT NULL,
+  `aemail` varchar(20) NOT NULL,
+  `apassword` varchar(10) NOT NULL,
+  `agender` varchar(10) NOT NULL,
+  `dob` date NOT NULL,
+  `acity` varchar(70) NOT NULL,
+  `aphone` varchar(10) NOT NULL,
+  `doj` date NOT NULL,
+  `apincode` int(10) NOT NULL,
+  `aaddress` varchar(200) NOT NULL,
+  `ausername` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`aid`, `aemail`, `apassword`, `agender`, `dob`, `acity`, `aphone`, `doj`, `apincode`, `aaddress`, `ausername`) VALUES
+(17, 'akakak@live.com', '123', 'Male', '1999-09-03', 'Ahmedabad', '1212121212', '2019-09-02', 111111, 'yyyyyyyy                                                           ', 'latest'),
+(18, 'new@gmail.com', 'www', 'Female', '1998-08-13', 'Bhopal', '2222222222', '2019-09-02', 333333, 's jcsjs jcs s snc ns csn csn csnc                                                                 ', 'new'),
+(19, 'new@gmail.com', 'www', 'Female', '1972-08-22', 'Mumbai', '2222222222', '2019-08-07', 333333, 's jcsjs jcs s snc ns csn csn csnc                                                                 ', 'new');
 
 -- --------------------------------------------------------
 
@@ -68,9 +97,9 @@ CREATE TABLE `package` (
 --
 
 INSERT INTO `package` (`pid`, `pname`, `pimg`, `pprice`) VALUES
-(1, 'gold', '', 999),
-(2, 'platinum', '', 1999),
-(3, 'Diamond', '', 2999);
+(1, 'gold', 'gold.jpg', 999),
+(2, 'platinum', 'platinum.jpg', 1999),
+(3, 'Diamond', 'diamond.jpg', 2999);
 
 -- --------------------------------------------------------
 
@@ -90,7 +119,6 @@ CREATE TABLE `subcategory` (
 --
 
 INSERT INTO `subcategory` (`subcatid`, `subcatname`, `catid`, `subcateimg`) VALUES
-(1, 'garba', 1, 'garba.jpg'),
 (2, 'hiphop', 1, 'hiphop.jpg'),
 (3, 'kathak', 1, 'kathak.jpg'),
 (4, 'jazz', 1, 'jazz.png'),
@@ -104,7 +132,7 @@ INSERT INTO `subcategory` (`subcatid`, `subcatname`, `catid`, `subcateimg`) VALU
 (12, 'sanskrit', 3, 'sanskrit'),
 (13, 'urdu', 3, 'urdu.jpg'),
 (14, 'hindi', 3, 'hindi.jpg'),
-(15, 'music', 4, 'multimedia\\music.png'),
+(15, 'music', 4, 'music.png'),
 (16, 'photo', 4, 'photo.png'),
 (17, 'video', 4, 'video.png'),
 (18, 'piano', 5, 'piano.png'),
@@ -117,26 +145,33 @@ INSERT INTO `subcategory` (`subcatid`, `subcatname`, `catid`, `subcateimg`) VALU
 (25, 'faishon', 6, 'faishon.png'),
 (26, 'sports', 6, 'sport.png'),
 (27, 'wedding', 6, 'wedding.png'),
-(32, 'andriod', 7, 'andriod.png'),
-(33, 'c', 7, 'c.png'),
-(34, 'css', 7, 'css.png'),
-(35, 'html', 7, 'html.png'),
-(36, 'php', 7, 'php.png'),
-(37, 'biology', 8, 'biology.png'),
-(38, 'chemistry', 8, 'chemistry'),
-(39, 'economics', 8, 'economics.png'),
-(40, 'maths', 8, 'maths.png'),
-(41, 'physics', 8, 'physics.png'),
-(42, 'science', 8, 'science.png'),
-(43, 'statistics', 8, 'statistics.png'),
-(44, 'basketball', 9, 'basketball.png'),
-(45, 'cricket', 9, 'cricket.png'),
-(46, 'football', 9, 'football.png'),
-(47, 'hockey', 9, 'hockey.png'),
-(48, 'tennis', 9, 'tennis.png'),
-(49, 'gre', 10, 'gre.png'),
-(50, 'toefl', 10, 'toefl.png'),
-(51, 'ielts', 10, 'ielts.png');
+(28, 'andriod', 7, 'andriod.png'),
+(29, 'c', 7, 'c.png'),
+(30, 'css', 7, 'css.png'),
+(31, 'html', 7, 'html.png'),
+(32, 'php', 7, 'php.png'),
+(33, 'biology', 8, 'biology.png'),
+(34, 'chemistry', 8, 'chemistry'),
+(35, 'economics', 8, 'economics.png'),
+(36, 'maths', 8, 'maths.png'),
+(37, 'physics', 8, 'physics.png'),
+(38, 'science', 8, 'science.png'),
+(39, 'statistics', 8, 'statistics.png'),
+(40, 'basketball', 9, 'basketball.png'),
+(41, 'cricket', 9, 'cricket.png'),
+(42, 'football', 9, 'football.png'),
+(43, 'hockey', 9, 'hockey.png'),
+(44, 'tennis', 9, 'tennis.png'),
+(45, 'gre', 10, 'gre.png'),
+(46, 'toefl', 10, 'toefl.png'),
+(47, 'ielts', 10, 'ielts.png'),
+(48, 'het', 100, 'img'),
+(49, 'het', 100, 'img'),
+(50, 'he', 100, 'img'),
+(51, 'rutvik', 48, 'img'),
+(52, 'new', 0, 'gg'),
+(53, 'new2', 5, 'gg'),
+(54, 'garba', 1, 'garba.jpg');
 
 -- --------------------------------------------------------
 
@@ -238,6 +273,22 @@ CREATE TABLE `teacherpackage` (
   `iscurrent` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `teacherpackage`
+--
+
+INSERT INTO `teacherpackage` (`tpid`, `pid`, `tid`, `dop`, `iscurrent`) VALUES
+(1, 1, 1, '2019-09-02', ''),
+(2, 3, 2, '2019-09-01', ''),
+(3, 2, 3, '2019-09-08', ''),
+(4, 3, 4, '2019-09-03', ''),
+(5, 1, 5, '2019-08-05', ''),
+(6, 1, 6, '2019-09-03', ''),
+(7, 3, 7, '2019-09-25', ''),
+(8, 2, 8, '2019-09-02', ''),
+(9, 2, 9, '2019-09-02', ''),
+(10, 2, 10, '2019-09-10', '');
+
 -- --------------------------------------------------------
 
 --
@@ -274,6 +325,16 @@ CREATE TABLE `teachingtype` (
   `ttimg` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `teachingtype`
+--
+
+INSERT INTO `teachingtype` (`ttid`, `ttname`, `ttimg`) VALUES
+(2, 'Mentor home', 'mentorhome.png'),
+(3, 'Student home', 'studenthome.png'),
+(4, 'Student home', 'Studenthome.png'),
+(7, 'online', 'online.png');
+
 -- --------------------------------------------------------
 
 --
@@ -286,6 +347,7 @@ CREATE TABLE `user` (
   `pwd` varchar(20) NOT NULL,
   `funame` varchar(20) NOT NULL,
   `luname` varchar(20) NOT NULL,
+  `Gender` varchar(50) NOT NULL,
   `email` varchar(20) NOT NULL,
   `contactno` varchar(11) NOT NULL,
   `doj` date NOT NULL,
@@ -299,21 +361,27 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`uid`, `uname`, `pwd`, `funame`, `luname`, `email`, `contactno`, `doj`, `upic`, `details`, `uadd`, `city`) VALUES
-(1, 'mukeshshah', '123456', 'mukesh', 'shah', 'muskesh@test.com', '754482357', '2019-08-02', '', 'class 10', '50, shahid Stambh, Zone-I, MP Nagar\r\nBhopal, Madhya Pradesh,', 'bhopal'),
-(2, 'poojapatel', '123456', 'pooja', 'patel', 'pooja@test.com', '845612799', '2019-08-11', '', 'Be in computer engineering', '241, Opp Satyam Mall, Nr Mansi Circle, Satellite.Ahmedabad', 'Ahmedabad'),
-(3, 'jimmyhopper', '123456', 'jimmy', 'hopper', 'jimmy@test.com', '184452612', '2019-08-08', '', 'Be in electronics and communication ', '37 Linda Road \r\nSaratoga Springs,NY', 'New york'),
-(4, 'michealphillip', '123456', 'micheal', 'phillip', 'michel@test.com', '120056478', '2019-08-14', '', 'class 8', '77 Tony Garden, Reynoldston,uk.', 'Reynoldston'),
-(5, 'Christinasullivan', '123456', 'Christina', 'sullivan', 'sullivan@test.com', '082 168 023', '2019-08-02', '', 'BE in Mechanical Engineering', '304,Bhoola Rd,East London,Eastern Cape,South Africa.', 'East London'),
-(6, 'manpreetsingh', '123456', 'manpreetsingh', 'gill', 'manpreet@test.com', '01724608777', '2019-08-09', '', 'BA ', 'Tower-C, 3rd Floor, DLF IT Park\r\nChandigarh,india', 'Chandigarh'),
-(7, 'venugopal', '123456', 'venugopal', 'krishnamurthy ', 'venugopal', '04424862081', '2019-08-02', '', '', '191, Tagore Street, Alwarthirunagar\r\nChennai, Tamil Nadu.india', 'Chennai'),
-(8, 'Ahmedkhan', '123456', 'Ahmed', 'khan', 'ahmed@test.com', '984563217', '2019-08-06', '', 'Class 12', 'Scf-41 Sector 15, Astor Basement Market\r\nDelhi, Haryana.', 'delhi'),
-(9, 'Geetanjaliratti', '123456', 'Geetanjali', ' Ratti', 'geetanjali@test.com', '78945879', '2019-08-07', '', '', '10, Nayan Society,AditiGunj,Mumbai,Maharashtra', 'Mumbai'),
-(10, 'Mehul Bhatia', '123456', 'Mehul', 'Bhatia', 'mehul@test.com', '812874987', '2019-08-01', '', 'BCA', '40, KusumGarh, Ratlam', ' Ratlam');
+INSERT INTO `user` (`uid`, `uname`, `pwd`, `funame`, `luname`, `Gender`, `email`, `contactno`, `doj`, `upic`, `details`, `uadd`, `city`) VALUES
+(1, 'mukeshshah', '123456', 'mukesh', 'shah', 'Male', 'muskesh@test.com', '754482357', '2019-08-02', '', 'class 10', '50, shahid Stambh, Zone-I, MP Nagar\r\nBhopal, Madhya Pradesh,', 'bhopal'),
+(2, 'poojapatel', '123456', 'pooja', 'patel', 'Female', 'pooja@test.com', '845612799', '2019-08-11', '', 'Be in computer engineering', '241, Opp Satyam Mall, Nr Mansi Circle, Satellite.Ahmedabad', 'Ahmedabad'),
+(3, 'jimmyhopper', '123456', 'jimmy', 'hopper', 'Male', 'jimmy@test.com', '184452612', '2019-08-08', '', 'Be in electronics and communication ', '37 Linda Road \r\nSaratoga Springs,NY', 'New york'),
+(4, 'michealphillip', '123456', 'micheal', 'phillip', 'Male', 'michel@test.com', '120056478', '2019-08-14', '', 'class 8', '77 Tony Garden, Reynoldston,uk.', 'Reynoldston'),
+(5, 'Christinasullivan', '123456', 'Christina', 'sullivan', 'Male', 'sullivan@test.com', '082 168 023', '2019-08-02', '', 'BE in Mechanical Engineering', '304,Bhoola Rd,East London,Eastern Cape,South Africa.', 'East London'),
+(6, 'manpreetsingh', '123456', 'manpreetsingh', 'gill', 'Male', 'manpreet@test.com', '01724608777', '2019-08-09', '', 'BA ', 'Tower-C, 3rd Floor, DLF IT Park\r\nChandigarh,india', 'Chandigarh'),
+(7, 'venugopal', '123456', 'venugopal', 'krishnamurthy ', 'Male', 'venugopal', '04424862081', '2019-08-02', '', '', '191, Tagore Street, Alwarthirunagar\r\nChennai, Tamil Nadu.india', 'Chennai'),
+(8, 'Ahmedkhan', '123456', 'Ahmed', 'khan', 'Male', 'ahmed@test.com', '984563217', '2019-08-06', '', 'Class 12', 'Scf-41 Sector 15, Astor Basement Market\r\nDelhi, Haryana.', 'delhi'),
+(9, 'Geetanjaliratti', '123456', 'Geetanjali', ' Ratti', 'Female', 'geetanjali@test.com', '78945879', '2019-08-07', '', '', '10, Nayan Society,AditiGunj,Mumbai,Maharashtra', 'Mumbai'),
+(10, 'Mehul Bhatia', '123456', 'Mehul', 'Bhatia', 'Male', 'mehul@test.com', '812874987', '2019-08-01', '', 'BCA', '40, KusumGarh, Ratlam', ' Ratlam');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`aid`);
 
 --
 -- Indexes for table `category`
@@ -392,6 +460,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `aid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
@@ -407,7 +481,7 @@ ALTER TABLE `package`
 -- AUTO_INCREMENT for table `subcategory`
 --
 ALTER TABLE `subcategory`
-  MODIFY `subcatid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `subcatid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `teacher`
@@ -437,7 +511,7 @@ ALTER TABLE `teacherlikes`
 -- AUTO_INCREMENT for table `teacherpackage`
 --
 ALTER TABLE `teacherpackage`
-  MODIFY `tpid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `tpid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `teachersubcat`
@@ -455,7 +529,7 @@ ALTER TABLE `teachersubtype`
 -- AUTO_INCREMENT for table `teachingtype`
 --
 ALTER TABLE `teachingtype`
-  MODIFY `ttid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ttid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user`
