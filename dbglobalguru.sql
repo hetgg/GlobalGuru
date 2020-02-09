@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2020 at 12:33 PM
+-- Generation Time: Feb 09, 2020 at 11:46 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -553,7 +553,97 @@ INSERT INTO `user` (`uid`, `uname`, `pwd`, `funame`, `luname`, `gender`, `email`
 (7, 'venugopal', '123456', 'venugopal', 'krishnamurthy ', 'male', 'venugopal', '1998-09-05', '04424862081', '2019-08-02', '', '', '191, Tagore Street, Alwarthirunagar\r\nChennai, Tamil Nadu.india', 'Chennai'),
 (8, 'Ahmedkhan', '123456', 'Ahmed', 'khan', 'male', 'ahmed@test.com', '1989-09-05', '984563217', '2019-08-06', '', 'Class 12', 'Scf-41 Sector 15, Astor Basement Market\r\nDelhi, Haryana.', 'delhi'),
 (9, 'Geetanjaliratti', '123456', 'Geetanjali', ' Ratti', 'male', 'geetanjali@test.com', '1973-09-05', '78945879', '2019-08-07', '', '', '10, Nayan Society,AditiGunj,Mumbai,Maharashtra', 'Mumbai'),
-(10, 'Mehul Bhatia', '123456', 'Mehul', 'Bhatia', 'male', 'mehul@test.com', '2001-09-05', '812874987', '2019-08-01', '', 'BCA', '40, KusumGarh, Ratlam', ' Ratlam');
+(10, 'Mehul Bhatia', '123456', 'Mehul', 'Bhatia', 'male', 'mehul@test.com', '2001-09-05', '812874987', '2019-08-01', '', 'BCA', '40, KusumGarh, Ratlam', ' Ratlam'),
+(11, 'jay123', 'jayshah', 'Jay', 'Shah', 'male', 'jayshah@gmail.com', '1999-01-15', '8765499827`', '1999-01-15', '', 'me in computer engineering', '1111 -b, Plot No -b, Phase Iii, Vatva', 'ahmedabad'),
+(12, 'shree26', 'shree145', 'shree', 'patel', 'male', 'gamechange@gmail.com', '1998-06-26', '839974638', '2019-01-14', '', 'me in mechanical', '537 , Raheja Chambers, Nariman Point', 'mumbai'),
+(13, 'ritik26', 'johncena24', 'Ritik', 'Patel', 'male', 'ritikmail@gmail.com', '1996-01-08', '9384748352', '2017-01-11', '', 'Computer engineering in SOCET', '52 ,  St Flr, Prashdham Bldh,  Narayan Dhuruv Street, Masjid Bunder (w)', 'mumbai'),
+(14, 'hema282', 'hemashsah22', 'Hema  ', 'Kuruvilla', 'female', 'hemakuruvilla@gmail.', '1998-01-03', '9876387922', '2020-01-30', '', '10th standard', '26 --/, Opp.osmania General Block, Afzalgunj', 'Hydrabad'),
+(15, 'vipulkalal', 'vipul1257', 'Vipul', 'Kalal', 'male', 'vipulgorana67@gmail.', '1967-01-22', '948765376', '2019-10-16', '', 'Game enthus', '12 /b, Naaz Bldg, Dr Bhandarkar Marg, Lamington Road', ' Mumbai'),
+(16, 'hetpatel167', 'hetzteyi', 'Het', 'Patel', 'Male', 'hetzjp123@gmail.com', '1978-01-13', '9374836483', '2019-11-06', '', 'Computer engineering last year', '24 , Shop No , Veekay Enterprises Compound, Express Highway, Majiwada, Thane (west)', 'mumbai'),
+(17, 'rutvik1638', 'rutvikbhaihai', 'rutvik', 'joshi', 'male', 'rutvikjoshi@gmail.co', '2019-12-21', '9474836483', '2020-01-24', '', '10th Std', '32 /, S V Road, Malad (west)', 'mumbai'),
+(18, 'shreenu172', 'shreenuper3673', 'shreenu', 'pillai', 'male', 'shreenu2783@gmail.co', '1987-01-06', '9474638393', '2020-02-11', '', '12th std cmpltd', '98 /, Parag Building, Scheme th Road, Matunga(c.r)', 'mumbai'),
+(19, 'shyamsir23', 'shyamisbest', 'shyam', 'chavda', 'male', 'shyamsir12@gmail.com', '1977-01-08', '9586408825', '2020-01-14', '', 'Tutor', '5 /, Grd Flr, , Humera Arcade, Samuel Street, B/h Roop Hotel,israli Mohalla, Masjid Bunder(e)', ' Mumbai'),
+(20, 'kaivil388', 'sallubhai26', 'kaivil', 'shah', 'male', 'kaivildeo@gmail.com', '1999-04-09', '7838389957', '2019-12-04', '', 'business man', '49 , Nath Building, Power House Road, Azadpur', 'delhi'),
+(21, 'dynamo27', 'dynamotrace33', 'dynamo', 'savant', 'male', 'dynamogaming2gmail.c', '1987-11-27', '8796483649', '2020-01-16', '', 'Gamer', '10 , Navmonica Society, Station Road, Opp Holy Cross High School, Thane (west)', 'mumbai'),
+(22, 'johncena22', 'johncena645', 'john', 'cena', 'male', 'johncena45@gmail.com', '1978-04-16', '937484638', '2020-01-17', '', '12th pass', '10 , shreeenivas Society, Station Road, Opp Holy Cross High School, Thane (west)', 'mumbai'),
+(23, 'mukesh67', 'mukeshpatel', 'mukesh', 'patel', 'male', 'mukesh67@gmail.com', '1957-10-31', '7896575793', '1999-01-29', '', 'Musician', '14 , nd Floor, Homi Modi Street, Nr Bombay House, Fort', ' Mumbai'),
+(24, 'mbhatt34', 'heyui267', 'mukesh ', 'bhatt', 'male', 'mukeshbhatt22@gmail.', '1968-10-09', '9688557389', '2020-02-13', '', '6th sem CE', '27,safal apart', 'Hydrabad'),
+(25, 'nikita367', 'shrama277', 'Nikita', 'sharma', 'female', 'nikitashrma@gmail.co', '1996-01-27', '8363748934', '1999-01-15', '', 'Business man', '27, Shreeji bungalows ', 'ahmedabad'),
+(26, 'gauri267', 'ggratta', 'gauri', 'ratta', 'female', 'gauriratta33@gmail.c', '1977-11-05', '8686753467', '2020-01-14', '', 'Employee at global guru', '354 , rd Stage,  Stage nd Block, Basaveshwarnagar', 'delhi'),
+(27, 'seema', 'seem26', 'seema', 'patel', 'male', 'malhotra.seema@dubey', '1986-06-10', '97654457876', '2020-01-08', '', '', '27,balaji bungalows', 'ahmedabad'),
+(28, 'jayshah', 'jayhsh278', 'Jay', 'malhotra', 'male', 'jayshah@gmail.com', '1997-09-03', '9758589043', '2020-01-11', '', '', 'Ashok Sood, R & A Park, A 4 102 & 103, Vashi Naka Mehul Rd, Chembur (east)', 'mumbai'),
+(29, 'jagdishv22', 'jagdish1800', 'jagdish', 'varma', 'male', 'jagdishverma@gmail.c', '1978-04-16', '9474638394', '2019-01-14', '', 'Business man', '21 /, B Bldg, Ansa Indl Estate, Saki Vihar Road, Andheri (west)', 'Mumbai'),
+(30, 'Omsohail27', 'sohaili37904', 'om', 'sohail', 'male', 'sohailhero@gmail.com', '1996-01-08', '9384748355', '2017-01-11', '', 'BE in civil eng', '35 /, Dda Flat, Madangir', 'delhi'),
+(31, 'raghavjuy', 'raghavhey27', 'raghav', 'juyal', 'male', 'raghav36@gmail.com', '1999-04-09', '8686753467', '2020-02-11', '', 'Student want to learn english', '780 /,ndcrshalndstgthmnindi-, Indiranagar', ' Bangalore'),
+(32, 'moni33', 'ilovemyparents33', 'monika', 'kakkar', 'female', 'monikalove@live.com', '1988-01-08', '948765376', '2019-10-16', '', 'Tabla master', 'Gala No.2 , Sector-8, Shankar Shila Complex, Sector-8, Airoli', 'Mumbai'),
+(33, 'uja37', 'heyuja77', 'uja', 'sandhu', 'female', 'ujasinger@gmail.com', '1978-04-14', '7896389563', '2020-01-05', '', 'want to learn singing in depth', 'Gala No.2 , Sector-8, Shankar Shila Complex, Sector-8, Airoli', 'mumbai'),
+(34, 'krishna2', 'krishna27', 'krishna', 'rama', 'male', 'krishna74@gmail.com', '1996-12-21', '957846838', '2016-01-11', '', 'ME in Computer Engineering', '217 , Aram Nagar, J P Road, Machlimar, Andheri (west)', ' Mumbai'),
+(35, 'animeshop2', 'animeshjsk55', 'animesh', 'lal', 'male', 'animesh78@live.com', '1977-08-06', '878965478', '2019-01-14', '', 'learn jazz', 'B, Benhur Bldg, Off New Link Rd, Lokhandwala Complex, Andheri (west)', 'mumbai'),
+(36, 'sumit278', 'indiaislove267', 'sumit', 'murti', 'male', 'sumitmurti38@gmail.c', '1978-01-08', '899478923', '2019-10-17', '', '', 'Yari Rd, Versova, Andheri (west)', 'mumbai'),
+(37, 'meetop99', 'seemslike72', 'meet', 'rao', 'male', 'mitrrao98@gmail.com', '1996-01-08', '948765357', '2019-10-27', '', 'Doing Job at Yes bank', '24, Yari Rd, Versova, Andheri (west)', 'mumbai'),
+(38, 'ramanchin2', 'chinmay67348', 'chinmay', 'raman', 'male', 'chinmay74@yahoo.com', '1978-03-22', '9668473629`', '2019-01-22', '', 'ME in Physical therapy', 'Plot No.162 Nr Ici School, Turbhe, Navi Mumbai', 'mumbai'),
+(39, 'varunsheth5', 'sethareop47', 'varun', 'seth', 'male', 'varunseth66@gmail.co', '1999-01-23', '8646378397', '2020-01-12', '', 'BE in business managment', '50 , Amrapali Shopping Arcade, Pokharan-, Vasant Vihar, Thane W', 'mumbai'),
+(40, 'mrigrank88', 'mishramfam28', 'mrigank', 'mishra', 'male', 'mrigangmishra44@gmai', '1998-01-11', '9474638393', '2019-05-14', '', 'Gamer ', '16 -a, Gr Flr, Azad Apts, S V Road, Azad Street, Andheri (west)', 'mumbai'),
+(41, 'hemilgg', 'hemil2799', 'hemil', 'shah', 'male', 'hemilshah56@yahoo.co', '1997-01-08', '84978936547', '2019-10-16', '', '', '29 -a, Gr Flr, Azad Apts, S V Road, Azad Street, Andheri (west)', 'mumbai'),
+(42, 'pujan1599', 'shahpujan', 'pujan', 'shah', 'male', 'pujanshah86@gmail.co', '1998-06-15', '9474638678', '2019-01-14', '', '12th std passed ', 'G-1, Onida House, Mahakali Caves Road, Chakala Midc, Andheri (west)', 'mumbai'),
+(43, 'megha866', 'passwordis453', 'megha', 'chopra', 'male', 'meghais87@gmail.com', '1996-01-22', '87654457876', '2020-01-08', '', 'want to learn science', '47 rd Floor, Jayshree Apts, Gokhale Rd, Opp Alok Hotel, Thane (west)', 'mumbai'),
+(44, 'sanat57', 'snaat_778', 'sanat ', 'patel', 'male', 'sanatpatel77@yahoo.c', '1999-07-16', '9774638393', '2020-01-06', '', 'ME in mech.', 'Navjivan, Opp Old High Court, Nr C U Shah Col, Ashram Road', 'ahmedabad'),
+(45, '', '', '', '', '', '', '0000-00-00', '', '0000-00-00', '', '', '', ''),
+(46, 'jayop66', 'jaybhatt_44', 'jay', 'bhatt', 'male', 'jaybhatt44@gmail.com', '1989-04-21', '9578462132', '2020-02-05', '', 'BE in Physical therapy', '103 /ad, D Souza X Lane, Mandvi', 'mumbai'),
+(47, 'monai33', 'monali_685', 'monali', 'suthar', 'female', 'monalisuthar685@gmai', '1996-01-30', '9754896540', '2019-10-22', '', 'housewife', '104 /ad, chatrapati  Lane, Mandvi', 'mumbai'),
+(48, 'nareshgg33', 'silveroakrocks44', 'naresh', 'parmar', 'male', 'nareshbhaipar9@gmail', '1977-07-14', '9568647852', '2019-10-19', '', 'Learner', '82 , Gagodia Market, Khari Baoli', 'delhi'),
+(49, 'jitinmusic44', 'musicislife19', 'jitin ', 'sharma', 'male', 'jitinshramamusic@gma', '1980-01-08', '8966857986', '2019-04-16', '', 'B tech (english)', '33, vijay nagar society, naranpura', 'ahmedabad'),
+(50, 'goyal33', 'goyalfam433', 'omana', 'goyal', 'female', 'omanagoyal43@gmail.c', '1995-07-28', '785634289', '2019-04-26', '', '', '223 , Mint St road, kuchipulli area', 'chennai'),
+(51, 'ramangg', 'ramangoswami56', 'raman', 'gosvami', 'male', 'goswamiraman5@opop.c', '1996-01-08', '9487653444', '2020-12-08', '', 'Bsc in geo', '144, ashapura apart, ramanujan road', 'madhya pradesh'),
+(52, 'aeshpat', 'ronaldo545', 'aesh ', 'shah', 'female', 'aesh453@gmail.com', '1965-01-03', '9374528163', '2020-02-11', '', 'housewife', '1165 , Budhwar Peth, , Budhwar Peth, Babu Genu Chowk', 'pune'),
+(53, 'ashish', 'ash004', 'ashish', 'kumar', 'male', 'ashish.112@gmail.com', '1999-01-01', '9408507293', '2020-01-22', '', 'interested in music', '2264  Dogwood Lane', 'Tucson'),
+(54, 'jackss', 'jacksss', 'jack', 'ashley', 'male', 'jack@gmail.com', '1998-02-23', '999808845', '2019-04-22', '', 'i love sports', '4938  Stutler Lane', 'Union City'),
+(55, 'karlcole', 'karcol', 'karl ', 'cole', 'male', 'Karl18@gmail.com', '1994-04-03', '9945871122', '2019-07-12', '', 'really like cooking', '3132  Lake Road', 'Maple Shade'),
+(56, 'dancole', 'danny11', 'dan', 'cole', 'male', 'dancole@gmail.com', '1999-06-06', '9911658344', '2019-12-02', '', 'i am interested in learning new things', '1152  Briercliff Road', 'Queens'),
+(57, 'tamikobushman', 'tambush', 'tamiko', 'bushman', 'female', 'tamiko22@yahoo,com', '1986-03-09', '9912454323', '2019-01-23', '', 'i love cooking and cleaning', '1008  Half and Half Drive', 'fresno'),
+(58, 'amy22', 'amz22', 'amy', 'jane', 'female', 'janey@gmail.com', '1998-12-12', '9788012789', '2020-01-04', '', 'i like to do coding', '809  Indiana Avenue', 'honolulu'),
+(59, 'amberr', 'amby44', 'amber', 'campbell', 'female', 'ambercamp@gmail.com', '1994-04-05', '9223875698', '2019-10-01', '', 'i like to play sports', '3320  Lost Creek Road', 'espanola'),
+(60, 'kelly33', 'kelly33webb', 'kelly', 'webb', 'female', 'webbkelly@gmail.com', '1994-02-02', '9923987611', '2019-03-02', '', 'i like to play musical instruments', '4602  Beeghley Street', 'barnes city'),
+(61, 'charles11', 'charlie11', 'charles', 'young', 'male', 'charlesyoung99@gmail', '1999-02-02', '9987908767', '2019-12-03', '', 'i like to learn coding', '2827  Parkway Drive', 'MUSKOGEE'),
+(62, 'johnny112', 'johnystewart112', 'john', 'stewart', 'male', 'joh34@yahoo.com', '1993-03-07', '9097348971', '2019-03-19', '', 'i like to learn languages', '3782  Woodridge Lane', 'anton'),
+(63, 'shaparam55', 'shapa55ram', 'shapa', 'ram', 'female', 'shaparam22@gmail.com', '1999-01-18', '9912909087', '2020-01-08', '', 'i like to paint and learn art', 'kolkata', 'west bengal'),
+(64, 'miragirl', 'meeragirl', 'mira', 'dewar', 'female', 'miradewa11@yahoo.com', '1998-09-11', '9099985676', '2019-05-19', '', 'i like cooking', '240 , University Nagar, Thiruvanmiyur', 'chennai'),
+(65, 'indresh', 'inderkumar', 'indra', 'kumar', 'male', 'indra11@gmail.com', '1991-07-13', '9870163867', '2019-08-11', '', 'i like dance', 'Near Diamond Market, Chembur', 'mumbai'),
+(66, 'ekramzzz', 'ekamzz', 'ekram', 'chawla', 'male', 'ekramzz@gmail.com', '2019-02-01', '9782648199', '2019-02-01', '', 'i like trekking and dancing', '31 , Om Sai Vyapari Madal, G M Rd, Chembur', 'mumbai'),
+(67, 'samvarta ', 'sammysura', 'samvarta', 'sura', 'female', 'sammi@yahoo.com', '1992-03-01', '9712230973', '2020-02-03', '', 'i like painting and dancing along with singing', '58 -b, Vertex Shopping Center, ,j B Nagar, Behind Police Station, Andheri (west)', 'mumbai'),
+(68, 'devjoshi33', 'deveshjoshi', 'dev', 'joshi', 'male', 'devjoshi33@gmail.com', '1993-09-11', '9230971221', '2019-09-17', '', 'i like to sing songs of all types', '7 , Madhuvan Park, Goddeo Rd., Bhayander (east)', 'mumbai'),
+(69, 'bakavasa7899', 'bakavasa4565', 'baka', 'vasa', 'male', 'bakavasa56@yahoo.com', '1996-05-18', '9807349078', '2020-01-31', '', 'i like programming and coding', '220 , Balanagar', 'hyderabad'),
+(70, 'sitara56', 'isitara56', 'sitara', 'mohan', 'female', 'sitaramo@gmail.com', '1990-02-01', '9890128981', '2020-02-23', '', 'i love sports and dance', 'D-253, Amar Gian Indl Complex, Lbs Marg, Khopat, Thane (west)', 'mumbai'),
+(71, 'garudakalal', 'garudzzz', 'garuda', 'kalal', 'male', 'garudakal@gmail.com', '1999-03-27', '9098712909', '2020-01-02', '', 'i like to dance', '521 /, th Floor, Swastik Chamber, Cst Road, Chembur', 'mumbai'),
+(72, 'devi89', 'devika22', 'devi', 'shah', 'female', 'devika@gmail.com', '1993-03-08', '9912980765', '2020-02-08', '', 'i like coding and computers', 'Shop No 2, 306, Kakad Airconditioned Mark, Kalbadevi Road, Kalbadevi', 'mumbai'),
+(73, 'tirapillai22', 'tipil22', 'tira', 'pillai', 'female', 'tirapillai@gmail.com', '1992-09-08', '9097231128', '2019-03-29', '', 'i am passionate about singing', '39 a, Sait Colony st Street, Egmore', 'chennai'),
+(74, 'ritikjoshi99', 'ritikjoshi79', 'ritik', 'joshi', 'male', 'ritikjoshi@gmail.com', '1999-07-12', '9812098222', '2019-01-11', '', 'i love music', 'Plot No94, Marol Cooperative Indl Est, Andheri Kurla Rd, J.b.nagar', 'mumbai'),
+(75, 'chitrapatel44', 'chitra44', 'chitra', 'patel', 'female', 'chittel44@gmail.com', '1992-09-11', '9781209811', '2020-01-11', '', 'like to do dance', 'A-28, Ghanshyam Indl Estate, V D Road, Andheri(w)', 'mumbai'),
+(76, 'bharat22', 'bharatpillai2222', 'bharat', 'pillai', 'male', 'bharat@gmail.com', '1995-02-17', '9710928891', '2019-08-19', '', 'i am interested in singing and music', '54 , Gangai Mahal, Ghansyam Gupta Road, Industrial Area, Dombivli (east)', 'mumbai'),
+(77, 'rohit', 'rohitshah11', 'rohit', 'shah', 'male', 'rohitshah@yahoo.com', '1997-03-11', '9091786711', '2020-01-01', '', 'i like to dance', '54 , Jainson Plaza Shopping Ce, S V Rd, Malad (west)', 'mumbai'),
+(78, 'rohini88', 'rohini88shah', 'rohini', 'shah', 'female', 'rohinishah@yahoo.com', '1990-01-01', '9127909111', '2019-04-19', '', 'i like developing apps', 'Office No -20 & 23, L Shopping Centre, Sector-8, Nerul, Navi Mumbai', 'mumbai'),
+(79, 'jayesh99', '99jayesh', 'jayesh', 'shah', 'male', 'jayesh99@live.com', '1993-07-18', '9812761901', '2019-12-03', '', 'i like doing paintings', 'A1, Mithakhali Under Bridge, Navrangpura', 'gandhinagar'),
+(80, 'rashmi88', '88rashmi88', 'rashmi', 'shah', 'female', 'rashmi88@live.com', '1997-03-19', '9110929012', '2020-02-11', '', 'i love cooking and baking', '63 -, Khethwadi Lane, Girgaon', 'mumbai'),
+(81, 'jayeshpatel88', 'jayesh88patel', 'jayesh', 'patel', 'male', 'jaypatel@live.com', '1990-01-01', '9019820018', '2020-02-19', '', 'i like art', '230 , Nirma Plaza, Makwana Road, Marol, Andheri (west)', 'mumbai'),
+(82, 'riteshpat', 'ritpat', 'ritesh', 'patel', 'male', 'riteshpate@gmail.com', '1991-03-22', '9408501122', '2019-09-11', '', 'i like drawing and painting', '46 , Surendran Estate, Station Road, Deonar', 'mumbai'),
+(83, 'jetha23', 'jethagada23', 'jetha', 'gada', 'male', 'jethagada@gmail.com', '1991-03-11', '9120910012', '2020-01-29', '', 'i have interest in coding', '91 , Krishna Bhuvan, Lohar Chawl, Near Crawford Market, Chira Bazar', 'mumbai'),
+(84, 'harishshah', 'harryshah', 'harish', 'shah', 'male', 'harish99@yahoo.com', '1993-09-11', '9091109472', '2019-03-19', '', 'i like to play sports and cricket', '27 , Tenor Dextar Bldg, Nr Shiv Mandir, Vir Savarkar Road, Near Rly Phathak Gawad, Virar', 'mumbai'),
+(85, 'mohan22', 'moha22mohan', 'mohan', 'kumar', 'male', 'mohankumar@live.com', '1992-11-13', '9091187367', '2019-09-11', '', 'i like computers', '49 -, -, Race Course Road, Madhava Nagar', 'bangalore'),
+(86, 'hiteshshah11', 'hitesh11shah', 'hitesh', 'shah', 'male', 'hiteshah@gmail.com', '1991-10-22', '9910229811', '2020-01-01', '', 'i like to make apps', '100 , Arshiwala Bldg, Wodehouse Road, Colaba', 'mumbai'),
+(87, 'ruchikajoshi', 'joshi33', 'ruchika', 'joshi', 'female', 'ruchika88@live.com', '1990-01-12', '9120971991', '2020-02-02', '', 'i want to learn new skills', 'Chm College Campus, Ulhasnagar', 'mumbai'),
+(88, 'ganeshachu', 'ganuchu', 'ganesh', 'acharya', 'male', 'ganesh90@live.com', '1998-12-12', '9075881209', '2019-12-17', '', 'i wish to learn coding', '52 , Shri Indl Estate,  Nd Hasnabad Lane, Santacruz(w)', 'mumbai'),
+(89, 'hetalshah11', 'hetal11shah', 'hetal', 'shah', 'female', 'hetal11@gmail.com', '1991-03-22', '9810771562', '2019-01-17', '', 'i want to learn music related things', '73 ,  Coles Rd, Frazer Town', 'bangalore'),
+(90, 'miteshgandhi11', 'mitugandhi', 'mitesh', 'gandhi', 'male', 'mitesh@live.com', '1999-11-01', '9176891098', '2020-01-01', '', 'i wish to learn tabla', 'Heera Bhuvan., Worli Village., Prabhadevi', 'mumbai'),
+(91, 'shailesh22', 'shailesh2', 'shailesh', 'patel', 'male', 'shailesh@live.com', '1991-02-01', '9187091127', '2020-01-02', '', 'businessman', 'Room No 10, 78 Dadiseth Agyari Lane, Opp Kalbadevi Road, Kalbadevi', 'mumbai'),
+(92, 'rajiv77', '7rajiv7', 'rajiv', 'gada', 'male', 'rajiv77@gmail.com', '1990-01-01', '9012890789', '2020-02-02', '', 'self employed', 'Mohanlal Mansion, Underai Rd, Police Station Rd, Malad (west)', 'mumbai'),
+(93, 'kavitapurohit', 'kavpur44', 'kavita', 'purohit', 'female', 'kavita21@yahoo.com', '1995-04-18', '9026518091', '2019-01-01', '', 'i like coding', 'D Joshi Road, Vile Parle West', 'mumbai'),
+(94, 'ayushikumariff', 'ayushi1999', 'ayushi', 'kumari', 'female', 'ayushi99@gmail.com', '1990-01-02', '9011992376', '2020-02-13', '', 'want to learn classicl dance', '42 st Floor, Maitri Garden, Pokhran Road No , Adjoining Oswal Park, Jekegram', 'mumbai'),
+(95, 'vipulgorana', 'vipulgoranavipul', 'vipul', 'gorana', 'male', 'gorana@live.com', '1991-03-19', '9028901789', '2019-09-19', '', 'i have my own business ', '29 /, Near Keshav Petrol, Mathura Road, Opp Ansal Plaza, Faridabad, Faridaba', 'delhi'),
+(96, 'adityamishra', 'mishraaditya76', 'aditya', 'mishra', 'male', 'aditya76@gmail.com', '1996-01-19', '9109289011', '2020-01-01', '', 'i want to learn maths', '550 , Doshi Chambers, Poona Street, Dana Bunder, Chinch Bunder', 'mumbai'),
+(97, 'deepraval11', 'deep1raval1', 'deep', 'raval', 'male', 'deepraval@gmail.com', '1991-02-10', '9911002299', '2019-07-01', '', 'i want to learn science 12th std', 'Shop No 2, 114, 2 Nd Parsiwada Lane, R K Wadi Bldg, Opp V P Road Police Stn, Girgaon', 'mumbai'),
+(98, 'rahulgopal00', '0rahulgopal', 'rahul', 'gopal', 'male', 'rahulgo@gmail.com', '1997-01-19', '9108451908', '2020-01-01', '', 'i want to clear my maths engineering', 'Swarg Avenue, Raopura', 'vadodara'),
+(99, 'hemagandhi', 'hemagandhihema', 'hema', 'gandhi', 'female', 'hemagandhi@gmail.com', '1989-01-19', '9018768911', '2020-01-16', '', 'housewife', '76 ,  Bhokare Building, Juna Topkhana, Shivajinagar', 'pune'),
+(100, 'rutvikjoshi04', 'rutvik04', 'rutvik', 'joshi', 'male', 'rutvikgtu@gmail.com', '1999-03-27', '9408507893', '2020-02-02', '', 'i want to enhance my skills ', 'Plot No 11a, Siddhartha House, 19th Rd, Chembur', 'mumbai');
 
 --
 -- Indexes for dumped tables
@@ -729,7 +819,7 @@ ALTER TABLE `teachingtype`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
